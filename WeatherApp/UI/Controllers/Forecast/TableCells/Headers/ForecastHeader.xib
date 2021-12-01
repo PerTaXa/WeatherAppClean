@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ForecastHeader" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ysI-GU-NHj">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rw-la-0Em">
+                            <rect key="frame" x="16" y="10" width="296" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="7Rw-la-0Em" secondAttribute="bottom" constant="10" id="1Q5-QN-ik4"/>
+                        <constraint firstItem="7Rw-la-0Em" firstAttribute="leading" secondItem="ysI-GU-NHj" secondAttribute="leading" constant="16" id="Y1h-67-kJE"/>
+                        <constraint firstItem="7Rw-la-0Em" firstAttribute="centerY" secondItem="ysI-GU-NHj" secondAttribute="centerY" id="ibV-hw-83G"/>
+                        <constraint firstItem="7Rw-la-0Em" firstAttribute="top" secondItem="ysI-GU-NHj" secondAttribute="top" constant="10" id="j8d-dk-z8x"/>
+                        <constraint firstAttribute="trailing" secondItem="7Rw-la-0Em" secondAttribute="trailing" constant="8" id="km4-nf-alL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="ysI-GU-NHj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CH2-wl-P9z"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ysI-GU-NHj" secondAttribute="trailing" id="gh8-o7-6EO"/>
+                <constraint firstItem="ysI-GU-NHj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nZ0-6Q-Pcq"/>
+                <constraint firstAttribute="bottom" secondItem="ysI-GU-NHj" secondAttribute="bottom" id="rw4-aY-rQA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="7Rw-la-0Em" id="X9b-ob-6L6"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="86"/>
+        </view>
+    </objects>
+</document>
